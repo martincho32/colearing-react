@@ -16,6 +16,7 @@ const CharactersList = () => {
         )
         const data = await response.json()
         setCharacters(data.results)
+        setInfo(data.info)
       } catch (error) {
         console.log('error: ', error)
       } finally {
